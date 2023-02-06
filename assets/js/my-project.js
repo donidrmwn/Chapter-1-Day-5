@@ -82,7 +82,7 @@ function showData(){
     document.getElementById('containerProject').innerHTML = "";    
     for(var i = 0; i <= projectLists.length - 1; i++){
         //console.log(projectLists[i].startDate.getDate());
-   
+        
         document.getElementById('containerProject').innerHTML +=  
         `<div class="project-card default-border">
             <div class="project-card-img">
@@ -128,7 +128,7 @@ function timeDistance(startDate,endDate){
     }else if(minuteDistance > 0){
         return `${minuteDistance} menit`
     }else{
-        return
+        return ``
     }
     
 }
