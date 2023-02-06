@@ -114,8 +114,7 @@ function timeDistance(startDate,endDate){
     let monthDistance = Math.floor(distance / (30*24*60*60*1000))
     let weekDistance = Math.floor(distance / (7*24*60*60*1000))
     let dayDistance = Math.floor(distance / (24*60*60*1000))
-    let hourDistance = Math.floor(distance / (60*60*1000))
-    let minuteDistance = Math.floor(distance / (60*1000))
+    
     
     if(monthDistance > 0){
         return `${monthDistance} bulan`
@@ -123,12 +122,8 @@ function timeDistance(startDate,endDate){
         return `${weekDistance} minggu`
     }else if(dayDistance > 0){
         return `${dayDistance} hari`
-    }else if(hourDistance > 0){
-        return `${hourDistance} jam`
-    }else if(minuteDistance > 0){
-        return `${minuteDistance} menit`
     }else{
-        return ``
+        return `Hari ini`
     }
     
 }
